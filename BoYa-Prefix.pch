@@ -1,0 +1,23 @@
+//
+// Prefix header for all source files of the 'BoYa' target in the 'BoYa' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <QuartzCore/QuartzCore.h>
+
+    #import "Dragon_Logger.h"
+    #import "Dragon_View.h"
+    #import "Dragon_CommentMethod.h"
+
+    #import "BoyaSharedInstaceDelegate.h"
+    #import "BoyaParameter.h"
+    #import "BoyaResponseModel.h"
+#endif
